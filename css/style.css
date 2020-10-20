@@ -1,0 +1,392 @@
+/* */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section{
+    flex-flow: row wrap;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.column{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container-row-footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;  
+}
+
+.left-side{
+    flex: 40%;
+  }
+  
+.right-side{
+    flex: 60%;
+  }
+
+.flex-item-50{
+    width: 500px;
+    /** height: 500px; **/
+    margin: 10px;
+}
+
+.flex-item-contact > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    width: 800px;;
+    
+}
+
+.about-text{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center; 
+}
+
+
+
+
+
+/********Header section*************/
+
+header{  
+    
+    background-color: #263238;
+    background-size: cover;
+    padding: 20px;
+}
+#home > *{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    padding-right: 50px;
+}
+
+#navbar{
+    text-align: center; 
+    padding: 20px; 
+}
+
+nav ul li a{
+    font-size: 18px; 
+    color: #f9a590;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+header .banner-text{
+    text-align: center;
+    color: #fff;
+    
+}
+
+header .banner-text h1{
+    font-size:82px;
+    font-weight: 700;
+}
+header .banner-text h3{
+    text-transform:uppercase;
+    font-weight: 300;
+}
+header .banner-text span{
+    font-size: 26px;
+    text-transform:uppercase;
+    font-weight: 300;
+    margin: 20px 0;
+}
+header .banner-text p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/********About section*************/
+#about{
+    background-color: #fff;
+}
+#about img{
+    
+    text-align:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.about-text p{
+    font-size: 20px;
+}
+
+/********Education section*************/
+#education {
+    background-color: #90caf9;
+    padding: 50px;
+}
+#education h2{
+    font-size:40px;
+    color:#263238;   
+}
+#education h3{
+    font-size:25px;
+    color:#263238; 
+    text-transform: uppercase;
+    border-bottom: 3px solid #263238;
+}
+#education h4{
+    font-size:30px;
+    color:#263238;
+}
+#education p{
+    font-size:20px;
+     color:#263238;
+}
+.education-side{  
+    border-bottom: 2px solid #fff;  
+}
+.education-left-side{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+/********Work section*************/
+#work {
+    background-color: #badffd;
+    padding: 50px;
+}
+#work h2{
+    font-size:40px;
+    color:#263238;   
+}
+#work h3{
+    font-size:25px;
+    color:#263238; 
+    text-transform: uppercase;
+    border-bottom: 3px solid #263238;
+}
+#work h4{
+    font-size:30px;
+    color:#263238;
+}
+#work p{
+    font-size:20px;
+     color:#263238;
+}
+.work-side{  
+    border-bottom: 2px solid #fff;  
+}
+.work-left-side{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/********skills section*************/
+#skills {
+    background-color: #ddf0ff;
+    padding: 50px;
+}
+#skills h2{
+    font-size:40px;
+    color:#263238;   
+}
+#skills h3{
+    font-size:25px;
+    color:#263238; 
+    text-transform: uppercase;
+    border-bottom: 3px solid #263238;
+}
+#skills h4{
+    font-size:30px;
+    color:#263238;
+}
+#skills p{
+    font-size:20px;
+     color:#263238;
+}
+.skills-side{  
+    border-bottom: 2px solid #fff;  
+}
+.skills-left-side{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.skills-bars{
+    width: 100%;
+
+}
+.skills-bars .bars{
+    margin-top: 36px;
+    padding: 0;
+    list-style: none;
+}
+.skills-bars li{
+    position: relative;
+    margin-bottom: 60px;
+    background: #ccc;
+    height: 42px;
+    border-radius: 3px;
+}
+.bar-expand{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-right: 24px;
+    background: #313131;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 3px 0 0 3px;
+}
+.skills-bars li em{
+    position: relative;
+    font: 18px Roboto, 'opensans-bold', sans-serif ;
+    color: #f9a590;
+    letter-spacing: 2px;
+    font-weight: normal;
+    top: -36px;
+}
+.html{
+    width: 85%;
+    -moz-animation: html 2s ease;
+    -webkit-animation: html 2s ease;
+}
+
+.css{
+    width: 70%;
+    -moz-animation: css 2s ease;
+    -webkit-animation: css 2s ease;
+}
+.javascript{
+    width: 40%;
+    -moz-animation: javascript 2s ease;
+    -webkit-animation: javascript 2s ease;
+}
+
+@-moz-keyframes html {
+    0%   { width: 0px;  }
+    100% { width: 85%;  }
+  }
+@-moz-keyframes css {
+0%   { width: 0px;  }
+10  0% { width: 70%;  }
+}
+@-moz-keyframes javascript {
+    0%   { width: 0px;  }
+    100% { width: 40%;  }
+}
+
+
+@-webkit-keyframes html {
+    0%   { width: 0px;  }
+    100% { width: 85%;  }
+}
+@-webkit-keyframes css {
+    0%   { width: 0px;  }
+    100% { width: 70%;  }
+}
+@-webkit-keyframes javascript {
+    0%   { width: 0px;  }
+    100% { width: 40%;  }
+}
+
+
+/********Contact section*************/
+#contact{
+    margin: 50px 0;
+}
+#contact h2{
+    text-align: center;
+    font-size: 52px;
+}
+#contact p{
+    text-align: center;
+}
+
+input[type=text],input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit]{
+    background-color: #f9a590;
+    color:#263238;
+    padding: 10px 20px 10px 20px;
+    border-style: none;
+    font-size: 18px;;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+input[type=submit]:hover{
+    background-color: #263238;
+    color:#f9a590;
+    border-style: none;
+    transition: 0.5s;
+
+}
+
+
+
+
+/********footer section*************/
+footer{
+    background-color:#263238;
+    color: white; 
+    margin-top: 20px;
+    padding: 50px 0;
+}
+
+
+footer ul li{
+    display: inline;
+    list-style: none;
+    padding-right: 50px;
+}
+footer ul li a{
+    font-size: 18px; 
+    color: #f9a590;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+}

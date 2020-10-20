@@ -1,0 +1,13 @@
+
+
+@media (max-width: 768px){
+    .row, .flex-container-row-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav2{
+        display: none;
+    }
+    
+}
